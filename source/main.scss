@@ -1,0 +1,21 @@
+@use 'config/reset';
+@use 'config/variaveis';
+@use 'config/header';
+@use 'config/products';
+@use 'config/tablet';
+@use 'config/mobile';
+
+body {
+    background-color: variaveis.$corBackground;
+
+    li {
+        list-style: none;
+    }
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
