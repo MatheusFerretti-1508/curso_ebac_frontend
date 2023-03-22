@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AACA,KACI,sBAEA,YACI","file":"../main.css","sourcesContent":["\r\nbody {\r\n    background-color: #eee;\r\n\r\n    strong {\r\n        color:rgb(212, 93, 93) ;\r\n    }\r\n}"]}
