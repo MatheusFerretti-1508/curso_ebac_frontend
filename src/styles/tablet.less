@@ -1,0 +1,12 @@
+@tablet: ~"(min-width:768px)and(max-width:1023px)";
+
+@media @tablet {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}

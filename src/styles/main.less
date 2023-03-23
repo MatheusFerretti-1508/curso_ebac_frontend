@@ -1,0 +1,86 @@
+@import "maps.less";
+@import "mobile.less";
+@import "tablet.less";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #colors [corDeFundo];
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #colors [corDeFundoHeader];
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+
+    .menu {
+        display: flex;
+
+        &-item {
+            font-weight: bold;
+            margin-left: 24px;
+
+            &-link {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+section {
+    padding: 56px 0;
+
+    .products {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 32.66%);
+        column-gap: 1%;
+        row-gap: 4%;
+        width: 100%;
+        
+        .product-item {
+            .product-item-img {
+                width: 100%;
+                border-radius: 16px;
+            }
+            .product-button {
+                display: block;
+                background-color: #colors[corDoBotao] ;
+                color: #fff;
+                text-align: center;
+                padding: 8px 0;
+                border-radius: 8px;
+                margin-top: 8px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #colors[corDoBotaoHover];
+                }
+            }
+        }
+    }
+}
